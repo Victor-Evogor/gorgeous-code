@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgeuos Code</title>
+    <!-- <link rel="stylesheet" href="../../frameworks/Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        #top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right>* {
+            margin: 0 10px;
+            white-space: pre;
+
+        }
+
+        #showcase>* {
+            text-align: center;
+        }
+
+        #showcase>p {
+            font-weight: 550;
+        }
+
+        #snippet-icon {
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        #middle-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        h1 {
+            font-weight: bolder;
+        }
+
+        img[src="Assets/Customizable%20Image.png"] {
+            width: 50%;
+        }
+
+        h2+p {
+            font-size: 1.2em;
+            font-weight: 550;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #footer-right {
+            display: flex;
+            align-items: center;
+            font-weight: 550;
+            font-size: 1.1em;
+        }
+
+        #footer-right>* {
+            margin-left: 10px;
+        }
+
+        .text-grey {
+            color: #b2b2b2 !important;
+        }
+
+        a {
+            text-decoration: none !important;
+            color: initial !important;
+        }
+
+        #hamburger-top {
+            display: none;
+        }
+
+        @media screen and (max-width: 510px) {
+
+            /* Phone Style */
+            #middle-button-showcase {
+                display: block !important;
+                width: 100% !important;
+                /* background-color: blue !important; */
+            }
+
+            #hamburger-top {
+                display: block;
+            }
+
+            .nav-right {
+                display: none;
+            }
+
+            #snippet-icon {
+                width: 90%;
+            }
+
+            #middle-container {
+                flex-direction: column-reverse;
+            }
+
+            img[src="Assets/Customizable%20Image.png"] {
+                width: 100%;
+                margin: 15px 0 30px 0;
+            }
+
+            #footer {
+                display: block;
+            }
+
+            #footer-right {
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (min-width: 510px) and (max-width: 780px) {
+
+            /* Tablet styles */
+            #middle-container {
+                flex-direction: column-reverse;
+            }
+
+            img[src="Assets/Customizable%20Image.png"] {
+                width: 85%;
+                margin: 15px auto 30px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-image: url(Assets/Background.png);">
+        <div class="top container">
+            <div class="nav p-4" id="top-nav">
+                <div class="nav-left"><img src="Assets/Logo.svg" alt="" srcset=""></div>
+                <div id="hamburger-top"><img src="Assets/Hamburger%20Menu.svg" alt="not here"></div>
+                <div class="nav-right">
+                    <a href="#"><img src="Assets/Search Icon.svg" alt=""></a>
+                    <div id="sign-in"><a href="#">Sign in</a></div>
+                    <div class="btn btn-large btn-dark text-light my-2">Get Started - <span class="text-grey">It's
+                            free</span></div>
+                </div>
+            </div>
+            <div id="showcase">
+                <h1 class="h1 ">Gorgeous Code Snippets</h1>
+                <p>With Snipper, create fully customizable code snippet in a matter of seconds</p>
+                <div style="margin: auto;">
+                    <div class="btn btn-large btn-dark text-light" id="middle-button-showcase">Get Started - <span
+                            class="text-grey">It's free</span></div>
+                </div>
+                <p class="my-2">No Credit Card Required</p>
+                <div class="snippet-img">
+                    <img src="Assets/Snippet%20Image.png" alt="" srcset="" id="snippet-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="middle" class="container">
+        <div id="middle-container">
+            <div class="middle-container-left">
+                <h2>A fully customizable code snippet editor</h2>
+                <p>Fully customize the color scheme of your code snippet, or use our own premade color schemes. Export
+                    your code snippet in JPG, PDF, PNG, or any other 10+ common extentions.</p>
+                <div class="btn btn-large btn-dark text-light my-2">Get Started - <span class="text-grey">Its
+                        free</span></div>
+            </div>
+            <div class="middle-container-right">
+                <img src="Assets/Customizable%20Image.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="footer" class="my-5">
+            <div><img src="Assets/Logo.svg" alt=""></div>
+            <div id="footer-right" class="text-grey">
+                <div><a href="#" class="text-grey">Terms and Conditions</a></div>
+                <div><a href="#" class="text-grey">Privacy Policy</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
